@@ -495,6 +495,20 @@
 	.banner.type3 .slider-bg .parallax-spacing { padding: 315px 0 80px; }	
 	.banner.type2 .slider-bg { background-image: url(images/slider2.jpg); }
 	.banner.type3 .slider-bg { background-image: url(images/slider3.jpg); }
+    
+	.slider-bg,
+	.banner.type2 .slider-bg,
+.banner.type3 .slider-bg {
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    width: 100vw; /* Sets the width to 100% of the viewport width */
+    height: 100vh; /* Sets the height to 100% of the viewport height */
+    position: relative; /* Allows for absolute positioning of child elements */
+    display: flex; /* Optional: Enables centering of content */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+}
 	
 	.banner h2 { color: #fff; font-family: "Roboto",sans-serif; font-weight: 100; text-transform: uppercase; margin-bottom: 0; font-size: 44px; }
 	.banner h2 strong { font-size: 68px; } 
@@ -797,7 +811,7 @@
 	
 	/*----*****---- << 06. Blog >> ----*****----*/
 
-	.blog-entry .entry-thumb { border: 1px solid #000; display: block; left: 0; line-height: 0; margin: 0 auto; overflow: hidden; position: relative; right: 0; }
+	/* .blog-entry .entry-thumb { border: 1px solid #000; display: block; left: 0; line-height: 0; margin: 0 auto; overflow: hidden; position: relative; right: 0; }
 
 	.blog-entry .entry-thumb img { filter: grayscale(100%); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); transform: scale(1.2) rotate(5deg); -moz-transform: scale(1.2) rotate(5deg); -ms-transform: scale(1.2) rotate(5deg); -o-transform: scale(1.2) rotate(5deg); -webkit-transform: scale(1.2) rotate(5deg); }
 	.blog-entry .entry-meta { top: -25px; left: 0; margin: 0 auto; position: absolute; right: 0; text-align: center; }
@@ -816,17 +830,17 @@
 	.entry-details .entry-meta h6 { background: #000; border: 1px solid #000; padding: 5px 10px; display: inline-block; margin: 0; line-height: 18px; color: #fff; }
 	.entry-metadata .author, .entry-metadata .tags { display: inline-block; font-size: 16px; margin: 0 20px; font-style: italic; }
 	.entry-metadata i.fa { padding-right: 5px; color: #999999; }
-	
+	 */
 	/*----*****---- << 07. Pricing Table >> ----*****----*/
 
-	ul.menu-card.check li:before { content: "\f00c"; color: #333333; }
+	/* ul.menu-card.check li:before { content: "\f00c"; color: #333333; }
 	ul.menu-card li:before { font-family: FontAwesome; font-size: 16px; font-style: normal; font-weight: normal; left: 20px; position: absolute; text-decoration: inherit; top: 20px; }
 	ul.menu-card li { background-color: #000000; border-bottom: 1px dashed #808080; color: #999999; display: block; padding: 16px 20px 16px 50px; position: relative; font-size: 18px; font-style: italic; }
 	ul.menu-card li:last-child, ul.menu-card li:last-child span { border-bottom: none; }  
 	ul.menu-card li span { border-bottom: 1px dashed #f19697; color: #fff; float: right; font-size: 18px; padding: 16px 15px; position: absolute; right: 0; top: 0; bottom: 0; width: 18%;}
 	.dt-sc-pricing-carousel .dt-sc-one-half { margin-left: 20px; }
 	a.cart { border-radius: 50%; padding: 0 4px; }
-	a.cart:hover { color: #fff; }
+	a.cart:hover { color: #fff; } */
 
 	/*----*****---- << 08. Testimonial >> ----*****----*/
 
