@@ -809,39 +809,7 @@
 	.caption .dt-sc-counter-number p { font-size: 60px; }
 	.caption-wrapper { margin: 0 auto; position: relative; display: inline-block; }
 	
-	/*----*****---- << 06. Blog >> ----*****----*/
-
-	/* .blog-entry .entry-thumb { border: 1px solid #000; display: block; left: 0; line-height: 0; margin: 0 auto; overflow: hidden; position: relative; right: 0; }
-
-	.blog-entry .entry-thumb img { filter: grayscale(100%); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); transform: scale(1.2) rotate(5deg); -moz-transform: scale(1.2) rotate(5deg); -ms-transform: scale(1.2) rotate(5deg); -o-transform: scale(1.2) rotate(5deg); -webkit-transform: scale(1.2) rotate(5deg); }
-	.blog-entry .entry-meta { top: -25px; left: 0; margin: 0 auto; position: absolute; right: 0; text-align: center; }
-	.blog-entry:hover .entry-details .entry-meta h6 { animation: 800ms linear pulse; -moz-animation: 800ms linear pulse; -ms-animation: 800ms linear pulse; -o-animation: 800ms linear pulse; -webkit-animation: 800ms linear pulse; }
 	
-	.blog-entry .read-more span { left: 70%; margin-left: 7px; opacity: 0; position: absolute; top: 17%; }
-	.blog-entry:hover .read-more span { left: 100%; opacity: 1; }
-	.blog-entry:hover .read-more { margin-right: 15px; } 
-	.blog-entry .read-more { position: relative; }
-	
-	.entry-title h3 { font-weight: 100; }	
-	.entry-details { position: relative; text-align: center; background-color: rgba(0, 0, 0, 0.5); padding: 20px 20px 40px; }
-	.blog-entry:hover .entry-details::after { background: #000000; height: 100%; }
-	.entry-details::after { bottom: 0; content: ""; height: 0; left: 0; position: absolute; width: 100%; z-index: -1; }
-	.entry-details .entry-metadata p { font-style: italic; font-size: 16px; line-height: 24px; }
-	.entry-details .entry-meta h6 { background: #000; border: 1px solid #000; padding: 5px 10px; display: inline-block; margin: 0; line-height: 18px; color: #fff; }
-	.entry-metadata .author, .entry-metadata .tags { display: inline-block; font-size: 16px; margin: 0 20px; font-style: italic; }
-	.entry-metadata i.fa { padding-right: 5px; color: #999999; }
-	 */
-	/*----*****---- << 07. Pricing Table >> ----*****----*/
-
-	/* ul.menu-card.check li:before { content: "\f00c"; color: #333333; }
-	ul.menu-card li:before { font-family: FontAwesome; font-size: 16px; font-style: normal; font-weight: normal; left: 20px; position: absolute; text-decoration: inherit; top: 20px; }
-	ul.menu-card li { background-color: #000000; border-bottom: 1px dashed #808080; color: #999999; display: block; padding: 16px 20px 16px 50px; position: relative; font-size: 18px; font-style: italic; }
-	ul.menu-card li:last-child, ul.menu-card li:last-child span { border-bottom: none; }  
-	ul.menu-card li span { border-bottom: 1px dashed #f19697; color: #fff; float: right; font-size: 18px; padding: 16px 15px; position: absolute; right: 0; top: 0; bottom: 0; width: 18%;}
-	.dt-sc-pricing-carousel .dt-sc-one-half { margin-left: 20px; }
-	a.cart { border-radius: 50%; padding: 0 4px; }
-	a.cart:hover { color: #fff; } */
-
 	/*----*****---- << 08. Testimonial >> ----*****----*/
 
 	.author img { border-radius: 50%; display: inline-block; }
