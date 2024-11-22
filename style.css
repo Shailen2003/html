@@ -719,7 +719,7 @@
 	
 	.dt-sc-service figure { display: block; left: 0; margin: 0 auto; position: relative; right: 0; overflow: hidden; border: 1px solid #000; line-height: 0; }
 		
-	.dt-sc-service figure img.dt-sc-filter { filter: grayscale(100%); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); -moz-transform: scale(1.2) rotate(5deg); -ms-transform: scale(1.2) rotate(5deg); -o-transform: scale(1.2) rotate(5deg); -webkit-transform: scale(1.2) rotate(5deg); }
+	/* .dt-sc-service figure img.dt-sc-filter { filter: grayscale(100%); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); -moz-transform: scale(1.2) rotate(5deg); -ms-transform: scale(1.2) rotate(5deg); -o-transform: scale(1.2) rotate(5deg); -webkit-transform: scale(1.2) rotate(5deg); } */
 	
 	.dt-sc-service:hover figure img.dt-sc-filter, .blog-entry:hover .entry-thumb img { -webkit-filter: none; -moz-filter: none; -ms-filter: none; -o-filter: none; filter: none; transform: scale(1) rotate(0deg); -moz-transform: scale(1) rotate(0deg); -ms-transform: scale(1) rotate(0deg); -o-transform: scale(1) rotate(0deg); -webkit-transform: scale(1) rotate(0deg); }
 	
@@ -735,7 +735,7 @@
 	
 	.dt-sc-service.type2 figure img.dt-sc-filter { -webkit-filter: none; -moz-filter: none; -ms-filter: none; -o-filter: none; filter: none; -moz-transform: scale(1.2) rotate(5deg); -ms-transform: scale(1.2) rotate(5deg); -o-transform: scale(1.2) rotate(5deg); -webkit-transform: scale(1.2) rotate(5deg); }
 	
-	.dt-sc-service.type2:hover figure img.dt-sc-filter { filter: grayscale(100%); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); transform: scale(1) rotate(0deg); -moz-transform: scale(1) rotate(0deg); -ms-transform: scale(1) rotate(0deg); -o-transform: scale(1) rotate(0deg); -webkit-transform: scale(1) rotate(0deg); }
+	/* .dt-sc-service.type2:hover figure img.dt-sc-filter { filter: grayscale(100%); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); transform: scale(1) rotate(0deg); -moz-transform: scale(1) rotate(0deg); -ms-transform: scale(1) rotate(0deg); -o-transform: scale(1) rotate(0deg); -webkit-transform: scale(1) rotate(0deg); } */
 	
 	.dt-sc-service.type2 h4 { font-size: 16px; font-style: italic; font-weight: 300; margin-top: 20px; }
 	
@@ -747,13 +747,13 @@
 	h3 span, h1.alignright span { font-weight:bold; } 
 	h1.alignright { line-height: 50px; text-align: right; text-transform: uppercase; color: #fff; margin: 15px 15px 0; font-weight: 100; }
 	
-	.pricing-parallax, .we-do-parallax { background-image: url(images/parallax-offer.jpg); }
-	.promo-parallax { background-image: url(images/parallax-promo.jpg); background-attachment:fixed; background-color: #000000; background-repeat:no-repeat; position:relative; }
+	.pricing-parallax, .we-do-parallax { background-image: url(images/contact-bg-footer.jpg); }
+	.promo-parallax { background-image: url(images/makeup1.jpg); background-attachment:fixed; background-color: #000000; background-repeat:no-repeat; position:relative; }
 	.promo-parallax.img2 { background-image: url(images/parallax-promo1.jpg); }
 	.counter-parallax, .parallax2, .parallax3 { background-image: url(images/parallax-counter.jpg); }
 	.blog-parallax { background-image: url(images/parallax-blog.jpg); }
 	.service-parallax { background-image: url(images/parallax-services.jpg); }
-	.appointment-parallax { background-image: url(images/parallax-appointment.jpg); }
+	.appointment-parallax { background-image: url(images/contact-bg-footer.jpg); }
 	
 	.appointment-parallax h3.border-title { font-size: 35px; text-align: center; }
 	.pricing-container { position: relative; }
@@ -866,7 +866,7 @@
 	.breadcrumb-wrapper h6 { margin-bottom: 0; color: #cccccc; font-weight: 300; } 	
 	
 	.dt-sc-about-slider { text-align: center; }
-	.dt-sc-about-slider img, .services-container > img { filter: grayscale(100%); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); }	
+	/* .dt-sc-about-slider img, .services-container > img { filter: grayscale(100%); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); }	 */
 	.dt-sc-view-btn > a { border: 1px solid #000; padding: 14px 30px; position: relative; top: -15px; color: #fff; font-size: 16px; }
 	.dt-sc-view-btn > a:hover { background: #fff; } 	
 	.dt-sc-abt > img { border-radius: 50%; }
@@ -908,6 +908,8 @@
 	.appointment-parallax a.appointment-btn { top: 20px; font-size: 20px; border-radius: 3px; padding: 13px 28px; }
 	
 	/*----*****---- << Contact Page >> ----*****----*/
+
+	
 	
 	.fullwidth-section.fullwidth-bg { background-color: #000000; float: left; width: 100%; }
 	
@@ -1341,3 +1343,25 @@
 	.cms { backface-visibility: hidden; box-shadow: 0 0 1px rgba(0, 0, 0, 0); display: inline-block; position: relative; transform: translateZ(0px); transition-duration: 0.5s;     transition-property: color; vertical-align: middle; }
 	.cms:hover::before, .cms:focus::before, .cms:active::before { transform: scaleY(1); transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
 	.cms:before { background: #2098d1; bottom: 0; content: ""; left: 0; position: absolute; right: 0; top: 0; transform: scaleY(0); transform-origin: 50% 0 0; transition-duration: 0.5s; transition-property: transform; transition-timing-function: ease-out; z-index: -1; }
+
+
+	/* Updated css */
+	.italic ul{
+         color: white;
+	}
+	.fadeIn,.italic{
+		color: white;
+	}
+	#footer{background:url(images/bg-aside.jpg)}
+
+	
+    .ser-img{
+		max-height: 220px;
+	}
+	.dt-sc-filter{
+		max-height: 445px;
+	}
+
+	.beauty-sale img{
+		border-radius: 20px;
+	}
