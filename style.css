@@ -64,7 +64,7 @@
 
 
 	.main-container{
-		margin: 0px;
+		margin-top: -20px;
 		padding: 0px;
 		box-sizing: border-box;
 		font-family: 'Roboto',sans-serif;
@@ -180,7 +180,7 @@
      
 	
 	.blog-post h3.border-title, #secondary h3.border-title { font-size: 20px;}
-	h3.border-title { text-align: left; clear: both; font-weight: 100; color: rgb(223, 135, 135); background-color: rgb(155, 83, 107); }	
+	h3.border-title { text-align: left; clear: both; font-weight: 100;   }	
 	h3.border-title.none:after, h3.border-title.none:before { display: none; }
 	h3.border-title.none { color: #ece8e8; text-transform: uppercase; margin-bottom: 20px; font-size: 20px; }
 	.widget h3.border-title { font-size: 24px; margin-bottom: 30px; }	
