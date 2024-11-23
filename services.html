@@ -1,30 +1,18 @@
 <!doctype html>
-<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
+
 <html lang="en-gb" class="no-js"> <!--<![endif]-->
 
     <head>
         <meta charset="utf-8">
         <meta name="viewport"
             content="width=device-width, initial-scale=1, maximum-scale=1">
-        <!--[if lt IE 9]> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <![endif]-->
-
+        
         <title>Services | TrendSalon HTML Template</title>
 
         <meta name="description" content>
         <meta name="author" content>
 
-        <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-        <!--[if lte IE 8]>
-		<script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
-	<![endif]-->
-
+        
         <!-- **Favicon** -->
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
@@ -58,164 +46,8 @@
             href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700'
             rel='stylesheet' type='text/css'>
 
-        <!--[if IE 7]>
-    <link rel="stylesheet" href="css/font-awesome-ie7.min.css" />
-    <![endif]-->
-
-        <!-- jQuery -->
+        
         <script src="js/modernizr.custom.js"></script>
-        <!-- <style>
-        *{
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-        }
-        @media screen and (min-width: 1120px){
-            :root{
-                --h2-font-size: 1.5rem;
-                --small-font-size: .875rem;
-            }
-        }
-        body{
-            font-family: var(--body-font);
-            background-color: var(--body-color);
-            color: var(--text-color);
-        }
-        img{
-            display: block;
-            max-width: 100%;
-            height: auto;
-        }
-        .container-image{
-            display: grid;
-            place-items: center;
-            margin-inline: 1.5rem;
-            padding-block: 5rem ;
-        }
-        .card-container{
-            display: grid;
-            row-gap: 3.5rem;
-        }
-
-        .card-artical{
-            position: relative;
-            overflow: hidden;
-        }
-
-        .card-img{
-            width: 328px;
-            border-radius: 1.5rem;
-        }
-        .card-data{
-            width: 280px;
-            background-color: #fff;
-            padding: 1.5rem 2rem;
-            box-shadow: 0 8px 24px hsla(0,0%,0%,.15);
-            border-radius: 1rem;
-            position: absolute;
-            bottom: -9rem;
-            left: 0;
-            right: 0;
-            margin-inline: auto;
-            opacity: 0;
-            transition: opacity 1s 1s;
-        }
-        .card-description{
-            display: block;
-            font-size: var(--small-font-size);
-            margin-bottom: .25rem;
-        }
-        .card-title{
-            font-size: var(--h2-font-size);
-            font-weight: 500;
-            color: blueviolet;
-            margin-bottom: .75rem;
-        }
-        .card-button{
-            text-decoration: none;
-            font-size: var(--small-font-size);
-            font-weight: 500;
-            color: var(--first-color);
-        }
-        .card-button:hover{
-            text-decoration: underline;
-        }
-        .card-artical:hover .card-data{
-            animation: show-data 1s forwards;
-            opacity: 1;
-            transition: opacity .3s;
-        }
-        .card-artical:hover{
-            animation: remove-overflow 2s forwards;
-        }
-        .card-artical:not(:hover){
-            animation: remove-data 1s forwards;
-        }
-        @keyframes show-data{
-            50%{
-                transform: translateY(-10rem);
-
-            }
-            100%{
-                transform: translateY(-7rem);
-            }
-        }
-        @keyframes remove-overflow{
-            to{
-                overflow: initial;
-            }
-        }
-        @keyframes remove-data{
-            0%{
-                transform: translate(-7rem);
-            }
-            50%{
-                transform: translate(-10rem);
-            }
-            100%{
-                transform: translate(.5rem);
-            }
-        }
-        @keyframes show-overflow{
-            0%{
-                overflow: initial;
-                pointer-events: none;
-            }
-            50%{
-                overflow: hidden;
-            }  
-        }
-        @media screen and (max-width: 340px){
-            .container{
-                margin-inline: 1rem;
-            }
-            .card-data{
-                width:250px;
-                padding: 1rem;
-            }
-        }
-        @media screen and (min-width: 768px){
-            .card-container{
-                grid-template-columns: repeat(2, 1fr);
-                column-gap: 1.5rem;
-            }
-        }
-        @media screen and (min-width: 2220px){
-            .container{
-                height: 100vh;
-            }
-            .card-container{
-                grid-template-columns: repeat(3,1fr);
-            }
-            .card-img{
-                width: 348px;
-            }
-            .card-data{
-                width: 316px;
-                padding-inline: 2.5rem;
-            }
-        }
-    </style> -->
         <style>
         
         .cards-img-container{
@@ -233,14 +65,14 @@
             max-width: 300px; /* Optional max-width    for each card */
             text-align: center;
             padding: 16px;
-            height: 400px;
+            height: 320px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: calc(33.333% - 16px);
 
         }
         .card img {
             max-width: 100%;
-            height: auto;
+            height: 220px;
             border-radius: 4px;
         }
         .card p {
@@ -261,6 +93,79 @@
     }
 }
 
+
+
+
+.backgroundfaq{
+    background-color: #e3f2fd;
+  }
+  .faq-container {
+    width: 600px;
+    margin: 0px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color:#e3f2fd ;
+  }
+  
+  @media (max-width:600px){
+    .faq-container{
+      width: 380px;
+    }
+  }
+  .faq-container h2{
+    color: rgba(250, 13, 104, 0.822);
+    text-align: center;
+    margin: 25px;
+  }
+  .faq-item {
+    margin-bottom: 20px;
+    opacity: 0; 
+    transform: translateX(100%); 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .faq-question{
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+      cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .faq-question:hover {
+    background-color: #e2e2e2;
+  }
+  
+  .faq-answer {
+    display: none; 
+    padding: 10px;
+    font-size: 0.9em;
+    color: #555;
+    background-color: #f9f9f9;
+    border-left: 4px solid #fa0d68;
+    margin-top: 5px;
+  }
+  
+  
+  .faq-item.active .faq-answer {
+    display: block;
+  }
+  
+  .faq-item.show {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+
     </style>
 
     </head>
@@ -278,24 +183,7 @@
         </div><!-- PreLoader -->
         <div class="wrapper"><!-- Wrapper -->
             <div class="inner-wrapper"><!-- Inner-Wrapper -->
-                <div class="top-bar"><!-- Top Bar -->
-                    <div class="container">
-                        <p>Shani Bazar, Uttam Nagar East, <br>New Delhi.</p>
-                        <div class="top-right">
-                            <ul>
-                                <li>
-                                    <span class="fa fa-phone-square"></span>
-
-                                </li>
-                                <li>
-                                    <span class="fa fa-envelope"></span>
-                                    <a
-                                        href="mailto:yourname@somemail.com">Himanshu@gmail.com</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- End of Top Bar -->
+                
                 <header id="header" class="dt-sticky-menu type2"><!-- Header -->
                     <div id="logo"><!-- Logo -->
                         <a title="TrendSalon" href="index.html"><img
@@ -454,49 +342,101 @@
                                     <div class="cards-img-container">
                                         <div class="card" style="width: 18rem;">
                                             <img src="./images/offer-img3.jpg"
-                                                class="card-img-top" alt="...">
+                                                class="card-img-top" alt="..."
+                                                style="width: 250px;">
                                             <div class="card-body">
-                                                <p class="card-text">Some quick
-                                                    example text to build on the
-                                                    card title and make up the
-                                                    bulk of the card's
-                                                    content.</p>
+                                                <p class="card-text"
+                                                    style="color: white;">Mac
+                                                    Bridal Makeup
+                                                    <br><span><strong>INR
+                                                            5000</strong></span></p>
                                             </div>
                                         </div>
                                         <div class="card" style="width: 18rem;">
                                             <img src="./images/offer-img3.jpg"
                                                 class="card-img-top" alt="...">
                                             <div class="card-body">
-                                                <p class="card-text">Some quick
-                                                    example text to build on the
-                                                    card title and make up the
-                                                    bulk of the card's
-                                                    content.</p>
+                                                <p class="card-text"
+                                                    style="color: white;">Mac
+                                                    Bridal Makeup
+                                                    <br><span><strong>INR
+                                                            5000</strong></span></p>
+
                                             </div>
                                         </div>
                                         <div class="card" style="width: 18rem;">
                                             <img src="./images/offer-img3.jpg"
                                                 class="card-img-top" alt="...">
                                             <div class="card-body">
-                                                <p class="card-text">Some quick
-                                                    example text to build on the
-                                                    card title and make up the
-                                                    bulk of the card's
-                                                    content.</p>
+                                                <p class="card-text"
+                                                    style="color: white;">Mac
+                                                    Bridal Makeup
+                                                    <br><span><strong>INR
+                                                            5000</strong></span></p>
+
                                             </div>
                                         </div>
                                         <div class="card" style="width: 18rem;">
                                             <img src="./images/offer-img3.jpg"
                                                 class="card-img-top" alt="...">
                                             <div class="card-body">
-                                                <p class="card-text">Some quick
-                                                    example text to build on the
-                                                    card title and make up the
-                                                    bulk of the card's
-                                                    content.</p>
+                                                <p class="card-text"
+                                                    style="color: white;">Mac
+                                                    Bridal Makeup
+                                                    <br><span><strong>INR
+                                                            5000</strong></span></p>
+
                                             </div>
                                         </div>
-                                        
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="./images/offer-img3.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text"
+                                                    style="color: white;">Mac
+                                                    Bridal Makeup
+                                                    <br><span><strong>INR
+                                                            5000</strong></span></p>
+
+                                            </div>
+                                        </div>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="./images/offer-img3.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text"
+                                                    style="color: white;">Mac
+                                                    Bridal Makeup
+                                                    <br><span><strong>INR
+                                                            5000</strong></span></p>
+
+                                            </div>
+                                        </div>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="./images/offer-img3.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text"
+                                                    style="color: white;">Mac
+                                                    Bridal Makeup
+                                                    <br><span><strong>INR
+                                                            5000</strong></span></p>
+
+                                            </div>
+                                        </div>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="./images/offer-img3.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text"
+                                                    style="color: white;">Mac
+                                                    Bridal Makeup
+                                                    <br><span><strong>INR
+                                                            5000</strong></span></p>
+
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
 
@@ -719,11 +659,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="aligncenter">
+                                <div class="aligncenter" ser-app-btn>
                                     <a href="#"
-                                        class="appointment-btn btn-eff2"><i
+                                        class="appointment-btn btn-eff2 ser-app-btn"><i
                                             class="fa fa-pencil-square-o"></i>Book
-                                        an <span>Appointment</span></a>
+                                        an <span class="ser-app-btn">Appointment</span></a>
                                 </div>
                             </div>
                         </div>
@@ -833,9 +773,8 @@
                                                             <figure
                                                                 class="gallery-thumb">
                                                                 <a href="#"><img
-                                                                        src="images/blog-img2.jpg"
-                                                                        alt
-                                                                        title></a>
+                                                                        src="./images/offer-img3.jpg"
+                                                                        alt="occassion" style="width: 180px; height:110px"></a>
                                                             </figure>
                                                             <div
                                                                 class="gallery-details">
@@ -945,7 +884,9 @@
                                 career!</p>
                             <div class="hr-invisible-very-small"></div>
                             <div class="column dt-sc-one-half first">
-                                <img src="./images/portfolio-images/portfolio-img24.jpg" alt title />
+                                <img
+                                    src="./images/portfolio-images/portfolio-img24.jpg"
+                                    alt title />
                             </div>
                             <div class="column dt-sc-one-half">
                                 <div class="hr-invisible-very-small"></div>
@@ -1151,6 +1092,50 @@
                         <div class="hr-invisible"></div>
                     </section><!-- End of Primary Section -->
                 </div><!-- End of Main -->
+
+                <section class="backgroundfaq">
+                    <section class="faq-container" id="faq">
+                        <h2>Frequently
+                            Asked Questions</h2>
+                        <div class="faq-item">
+                            <div class="faq-question"
+                                onclick="toggleAnswer(0)">How to
+                                book
+                                appointment?</div>
+                            <div class="faq-answer">An appointment button is
+                                given,
+                                click on
+                                that and complete your appointment.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question"
+                                onclick="toggleAnswer(1)">How can
+                                I
+                                contact support?</div>
+                            <div class="faq-answer">You can contact support via
+                                email or
+                                phone listed in the Contact section.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question"
+                                onclick="toggleAnswer(2)">Is there
+                                a
+                                mobile version of the website?</div>
+                            <div class="faq-answer">Yes, the website is
+                                responsive and
+                                works
+                                on all devices.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question"
+                                onclick="toggleAnswer(3)">Can I
+                                book appointment offline?</div>
+                            <div class="faq-answer">Yes, you can also book
+                                appointments
+                                offline by visiting our clinic directly.</div>
+                        </div>
+                    </section>
+                </section>
                 <footer id="footer">
                     <div class="hr-invisible"></div>
                     <div class="footer-widgets-wrapper">
@@ -1267,6 +1252,31 @@
         <script src="js/jsplugins.js" type="text/javascript"></script>
         <script src="js/jquery.meanmenu.min.js" type="text/javascript"></script>
         <script src="js/custom.js"></script>
+        <script>
+            function toggleAnswer(index) {
+                const answers = document.querySelectorAll('.faq-answer');
+                const answer = answers[index];
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            }
+            
+            
+            
+            document.addEventListener("DOMContentLoaded", function () {
+                const faqItems = document.querySelectorAll(".faq-item");
+            
+                faqItems.forEach((item, index) => {
+                    setTimeout(() => {
+                        item.classList.add("show");
+                    }, index * 700); // Adjust delay time as needed
+                });
+            });
+            
+            function toggleAnswer(index) {
+                const answers = document.querySelectorAll('.faq-answer');
+                const answer = answers[index];
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            }
+        </script>
 
     </body>
 
