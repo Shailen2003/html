@@ -1,4 +1,6 @@
+
 @charset "utf-8";
+
 /* CSS Document */
 
 @import "css/reset.css";
@@ -59,18 +61,131 @@
 	h4{ font-size:20px; }
 	h5{ font-size:16px; }
 	h6{ font-size:14px; }
+
+
+	.main-container{
+		margin: 0px;
+		padding: 0px;
+		box-sizing: border-box;
+		font-family: 'Roboto',sans-serif;
+	     background-image: url(); 
+		 background-color: rgb(228, 197, 197);
+	}
+
+    .container1{
+		width: 90%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		flex-direction: column;
+		margin: 20px auto;
+	}
+	.container1 h2{
+		font-size: 40px;
+		margin-bottom: 25px;
+		color: #000;
+		position: relative;
+	}
+     
+	.container1 p{
+		font-size: 18px;
+		color: black;
+		margin-bottom: 35px;
+	}
+
+	.container1 p::after{
+		content: "";
+		position: absolute;
+		width: 25%;
+		height: 2px;
+		display: block;
+		margin: 28px auto;
+		background-color: red;
+	}
+
+	.highlight{
+		color: red;
+	}
+	.container2{
+		width: 90%;
+		margin: 0 auto;
+		padding: 10px 20px;
+	}
+	.about{
+		display: flex;
+		justify-content:space-between;
+		align-items: center;flex-wrap: wrap;
+	}
+	.about-image{
+         flex: 1;
+		 margin-right: 40px;
+		 overflow: hidden;
+	}
+	.about-image img{
+		max-width: 100%;
+		height: auto;
+		display: block;
+		transition: 0.5 ease;
+	}
+	.about-image:hover img{
+		transform: scale(1.2);
+	}
+	.about-content{
+		flex: 1;
+	}
+	.about-content p{
+		font-size: 15px;
+		line-height: 1.5;
+		color: #666;
+	}
+	.about-content .read-more{
+		display: inline-block;
+		background-color: rgb(227, 13, 13);
+		padding: 10px 48px;
+		color: #fff;
+		font-size: 19px;
+		text-decoration: none;
+		border-radius: 7px;
+		margin-top: 15px;
+		transition: 0.3 ease;
+	}
+	.about-content .read-more:hover{
+           background-color: rgb(220, 89, 89);
+		   transform: translateY(-5px) scale(1.1);
+	}
+	@media screen and (max-width: 768px) {
+		.container1{
+			padding: 0px 20px;
+		}
+		.container1 h2{
+			font-size: 30px;
+		}
+		.container1 p{
+			font-size: 15px;
+			margin-bottom: 0px;
+		}
+		.about{
+			padding: 20px;
+			flex-direction: column;
+		}
+		.about-content p{
+           padding: 0px;
+		   font-size: 16px;
+		}
+		.about-content .read-more{
+			font-size: 15px;
+		}
+	}
+     
 	
-	h2.border-title.aligncenter { text-align:center; margin-bottom:50px; position: relative; color: #282828; font-weight: 100; }
-	h2.border-title.aligncenter:before { background: url(images/heading-bottom.png) no-repeat; content: ""; height: 35px; left: 0; margin: 0 auto; position: absolute; right: 0; 
-    bottom: -40px; width: 206px; z-index: 9; }
-	
-	.blog-post h3.border-title, #secondary h3.border-title { font-size: 20px; }
-	h3.border-title { text-align: left; clear: both; font-weight: 100; }	
+	.blog-post h3.border-title, #secondary h3.border-title { font-size: 20px;}
+	h3.border-title { text-align: left; clear: both; font-weight: 100; color: rgb(223, 135, 135); background-color: rgb(155, 83, 107); }	
 	h3.border-title.none:after, h3.border-title.none:before { display: none; }
-	h3.border-title.none { color: #fff; text-transform: uppercase; margin-bottom: 20px; font-size: 20px; }
+	h3.border-title.none { color: #ece8e8; text-transform: uppercase; margin-bottom: 20px; font-size: 20px; }
 	.widget h3.border-title { font-size: 24px; margin-bottom: 30px; }	
 	.border-title { position: relative; }
-	p.aligncenter { line-height: 30px; width: 85%; }
+	p.aligncenter { line-height: 30px; width: 85%; color: }
 	
 	h3.title, h4.title { text-transform: uppercase; position: relative; }
 	h3.title:after, h4.title:after { height: 1px; clear: both; display: block; position: absolute; bottom: -10px; background: #353737; content: ""; width: 100%; }
@@ -139,7 +254,7 @@
 	.rounded-corner { border-radius: 5px; }
 		
 	.fullwidth-section { clear: both; float: left; margin: 0; padding: 0; width: 100%; }
-	.fullwidth-bg { background-color: rgba(0, 0, 0, 0.5); float: left; width: 100%; }
+	.fullwidth-bg { background-color: rgba(162, 69, 87, 0.662); float: left; width: 100%; }
 	.fullwidth-bg1 { background-color: #282828; }
 	
 	.parallax-spacing { display: inline-block; padding: 90px 0; width: 100%; }
