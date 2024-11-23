@@ -170,7 +170,7 @@
 	/*----*****---- << Team >> ----*****----*/
 
 	.dt-sc-team { text-align: center; }
-	.dt-sc-team .image img { filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); -webkit-filter: grayscale(100%); }
+	.dt-sc-team .image img { -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%);  }
 	.dt-sc-team.type1 > h4 { font-weight: 100; }
 	.dt-sc-team.type1 > h5 { font-weight: 300; }
 	.dt-sc-team.type1 .image { box-sizing: content-box; display: inline-block; height: 100%; margin-bottom: 15px; width: 100%; }
