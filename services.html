@@ -48,7 +48,7 @@
         }
 
         .card {
-            background-color: red;
+            background-color: rgb(219, 192, 167);
             border: 1px solid #ddd;
             border-radius: 8px;
             width: calc(33.333% - 16px);
@@ -64,9 +64,18 @@
         }
 
         .card img {
-            max-width: 100%;
-            height: 220px;
+            max-width: auto;
+            height: 230px;
+            width: fit-content;
             border-radius: 4px;
+        }
+        .card img:hover{
+            transform: scale(1.1); /* Slight zoom-out effect */
+            
+        }
+        .card:hover{
+            box-shadow: #555;
+            background-color: rgb(245, 115, 212);
         }
 
         .card p {
@@ -86,12 +95,47 @@
         @media (max-width: 480px) {
             .card {
                 width: 100%;
-                /* 1 column on smaller screens */
+                /*1 column on smaller screens */
             }
         }
-        
 
+        /* This is the css of Our Lattest Work ( class slider)
+        .slider{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+            animation: rotate 30s linear infinite;
+        }
+        @keyframes rotate{
+            
+            0% {
+                transform: perspective(1000px) rotateY(0deg);
+            }
 
+            100% {
+                transform: perspective(1000px) rotateY(360deg);
+            }
+        }
+        .slider span {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+        }
+        .slider span img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: 2s;
+
+        }
+        .slider span:hover img {
+            transition: translateY(-50) scale(1.2);
+        }*/
 
 
         .backgroundfaq {
@@ -201,11 +245,12 @@
                             <ul class="menu">
                                 <li class="menu-item-simple-parent"><a href="index.html">Home</a>
 
-                                </li>
-                                <li class="menu-item-simple-parent"><a href="about-us.html">About</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="about.html">About
-                                                Us</a></li>
+                                    </li>
+                                    <li class="menu-item-simple-parent"><a
+                                            href="about-us.html">About</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="about.html">About
+                                                    Us</a></li>
 
                                         <li><a href="404.html">404</a></li>
 
@@ -274,7 +319,8 @@
                             <div class="clear"></div>
                             <div class="hr-invisible-small"></div>
                             <ul class="dt-sc-tabs-frame">
-                                <li class="btn-eff3 current">Makeup Service</li>
+                                <li class="btn-eff3 current">Makeup
+                                    Service</li>
                                 <li class="btn-eff3">Hair Service</li>
                                 <li class="btn-eff3">Skin Service</li>
                                 <li class="btn-eff3">Nail service</li>
@@ -287,11 +333,12 @@
                                         <div class="container">
                                             <h4 style="display: flex;
                                             align-items:center;
-                                            justify-content:center;">Bridal Makeup</h4>
+                                            justify-content:center;">Bridal
+                                                Makeup</h4>
                                         </div>
                                         <div class="cards-img-container">
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="..."
+                                                <img src="./images/bridal-mac.jpg" class="card-img-top" alt="..."
                                                     style="width: 250px;">
                                                 <div class="card-body">
                                                     <p class="card-text" style="color: white;">Mac
@@ -302,25 +349,25 @@
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/bridal-hd.jpg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
+                                                    <p class="card-text" style="color: white;">HD
                                                         Bridal Makeup
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/bridal-airbrush.jpg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
+                                                    <p class="card-text" style="color: white;">AirBrush
                                                         Bridal Makeup
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                         </div>
@@ -329,40 +376,38 @@
                                         <div class="container">
                                             <h4 style="display: flex;
                                             align-items:center;
-                                            justify-content:center;"> Party Makeup </h4>
+                                            justify-content:center;"> Party
+                                                Makeup </h4>
                                         </div>
                                         <div class="cards-img-container">
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="..."
-                                                    style="width: 250px;">
+                                                <img src="./images/party-makeup.jpg" class="card-img-top" alt="..."
+                                                    style="width: 250px;" >
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Glamorous makeup
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/party-makeup3.jpg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Parties Makeup
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="images/engagement-makeup2.jpg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Special Occasion Makeup
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                         </div>
@@ -371,46 +416,44 @@
                                         <div class="container">
                                             <h4 style="display: flex;
                                             align-items:center;
-                                            justify-content:center;"> Engagement Makeup </h4>
-                                        </div>    
+                                            justify-content:center;"> Engagement
+                                                Makeup </h4>
+                                        </div>
                                         <div class="cards-img-container">
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="..."
+                                                <img src="images/engagement-makeup1.jpeg" class="card-img-top" alt="..."
                                                     style="width: 250px;">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Cultural Engagement Makeup
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="images/engagement-makeup3.jpg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Traditional Engagement Makeup
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
                                                 <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Glamorous Engagement Makeup
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                         </div>
                                     </section>
                                 </section>
-                               
+
                             </div>
 
                             <div class="dt-sc-tabs-frame-content">
@@ -419,40 +462,39 @@
                                         <div class="container">
                                             <h4 style="display: flex;
                                             align-items:center;
-                                            justify-content:center;"> Haircuts & Styling </h4>
+                                            justify-content:center;"> Haircuts &
+                                                Styling </h4>
                                         </div>
                                         <div class="cards-img-container">
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="..."
+                                                <img src="./images/haircut&styling2.jpg" class="card-img-top" alt="..."
                                                     style="width: 250px;">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Vintage Curls
                                                         <br><span><strong>INR
                                                                 8000</strong></span>
                                                     </p>
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/haircut&styling3.jpeg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">
+                                                        Beach Waves
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/haircut1.jpeg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Messy Bun
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                         </div>
@@ -461,40 +503,38 @@
                                         <div class="container">
                                             <h4 style="display: flex;
                                             align-items:center;
-                                            justify-content:center;"> Hair Treatment </h4>
+                                            justify-content:center;"> Hair
+                                                Treatment </h4>
                                         </div>
                                         <div class="cards-img-container">
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="..."
+                                                <img src="./images/hair-treatement1.jpeg" class="card-img-top" alt="..."
                                                     style="width: 250px;">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Protein Treatment
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/hair-treatement2.jpg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Hair Smoothing Treatments
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/hair-treatement3.webp" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Bond Repair Treatment
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                         </div>
@@ -503,40 +543,38 @@
                                         <div class="container">
                                             <h4 style="display: flex;
                                             align-items:center;
-                                            justify-content:center;"> Bridal-Hair Styling </h4>
-                                        </div>    
+                                            justify-content:center;">
+                                                Bridal-Hair Styling </h4>
+                                        </div>
                                         <div class="cards-img-container">
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="..."
+                                                <img src="./images/hair-bridal1.jpg" class="card-img-top" alt="..."
                                                     style="width: 250px;">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Twist and Pin
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/hair-bridal2.jpeg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Finger Waves
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/hair-bridal3.jpg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Victory Rolls
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                         </div>
@@ -549,40 +587,38 @@
                                         <div class="container">
                                             <h4 style="display: flex;
                                             align-items:center;
-                                            justify-content:center;"> Facial & Cleanup </h4>
+                                            justify-content:center;"> Facial &
+                                                Cleanup </h4>
                                         </div>
                                         <div class="cards-img-container">
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="..."
+                                                <img src="./images/skin-aging.jpeg" class="card-img-top" alt="..."
                                                     style="width: 250px;">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Face Aging
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/skin-whitning.jpeg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Face Whitining
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/skin-hydrating.jpeg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Face Hydrating
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                         </div>
@@ -591,40 +627,38 @@
                                         <div class="container">
                                             <h4 style="display: flex;
                                             align-items:center;
-                                            justify-content:center;"> Waxing </h4>
+                                            justify-content:center;"> Waxing
+                                            </h4>
                                         </div>
                                         <div class="cards-img-container">
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="..."
+                                                <img src="./images/waxing-arm.jpeg" class="card-img-top" alt="..."
                                                     style="width: 250px;">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Arm Waxing
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/waxing-legs.jpg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Leg Waxing
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/waxing-fullbody.jpg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Full-Body Waxing
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                         </div>
@@ -633,40 +667,38 @@
                                         <div class="container">
                                             <h4 style="display: flex;
                                             align-items:center;
-                                            justify-content:center;"> Threading </h4>
-                                        </div>    
+                                            justify-content:center;"> Threading
+                                            </h4>
+                                        </div>
                                         <div class="cards-img-container">
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="..."
+                                                <img src="./images/threading1.jpeg" class="card-img-top" alt="..."
                                                     style="width: 250px;">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Eyebrow Threading
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/threading2.jpeg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Upper-Lip Threading
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/threading3.webp" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">Full-Face Threading
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                         </div>
@@ -679,40 +711,38 @@
                                         <div class="container">
                                             <h4 style="display: flex;
                                             align-items:center;
-                                            justify-content:center;"> Manicure & Pedicure</h4>
+                                            justify-content:center;"> Manicure &
+                                                Pedicure</h4>
                                         </div>
                                         <div class="cards-img-container">
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="..."
+                                                <img src="./images/manicure&padicure1.jpg" class="card-img-top" alt="..."
                                                     style="width: 250px;">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/manicure&padicure2.jpg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/manicure&padicure3.jpeg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                         </div>
@@ -721,40 +751,38 @@
                                         <div class="container">
                                             <h4 style="display: flex;
                                             align-items:center;
-                                            justify-content:center;"> Nail-Arts </h4>
+                                            justify-content:center;"> Nail-Arts
+                                            </h4>
                                         </div>
                                         <div class="cards-img-container">
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="..."
+                                                <img src="./images/nailart1.jpg" class="card-img-top" alt="..."
                                                     style="width: 250px;">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/nailart2.jpg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/nailart3.png" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                         </div>
@@ -763,40 +791,38 @@
                                         <div class="container">
                                             <h4 style="display: flex;
                                             align-items:center;
-                                            justify-content:center;"> Polish & Gel </h4>
-                                        </div>    
+                                            justify-content:center;"> Polish &
+                                                Gel </h4>
+                                        </div>
                                         <div class="cards-img-container">
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="..."
+                                                <img src="./images/nail-gel1.jpeg" class="card-img-top" alt="..."
                                                     style="width: 250px;">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/nail-gel2.jpeg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/nail-gel3.jpeg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Mac
-                                                        Bridal Makeup
+                                                    <p class="card-text" style="color: white;">
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
-        
+
                                                 </div>
                                             </div>
                                         </div>
@@ -902,7 +928,7 @@
                                                 <div class="column dt-sc-one-third">
                                                     <div class="dt-sc-offer">
                                                         <figure class="gallery-thumb">
-                                                            <a href="#"><img src="images/offer-img1.jpg" alt title></a>
+                                                            <a href="#"><img src="./images/prosthetic.jpeg" alt title></a>
                                                         </figure>
                                                         <div class="gallery-details">
                                                             <h4><a href="#">Prosthetic
@@ -919,7 +945,7 @@
                                                 <div class="column dt-sc-one-third">
                                                     <div class="dt-sc-offer">
                                                         <figure class="gallery-thumb">
-                                                            <a href="#"><img src="images/offer-img2.jpg" alt title></a>
+                                                            <a href="#"><img src="./images/skiniti.webp" alt title></a>
                                                         </figure>
                                                         <div class="gallery-details">
                                                             <h4><a href="#">Skiniti</a></h4>
@@ -1007,156 +1033,19 @@
                         <div class="clear"></div>
                         <div class="hr-invisible"></div>
                     </div>
-                    <div class="hr-separator type2"></div>
-                    <div class="container">
-                        <div class="clear"></div>
-                        <div class="hr-invisible"></div>
-                        <h2 class="border-title aligncenter"> Client
-                            Testimonials </h2>
-                        <div class="dt-sc-testimonial-carousel-wrapper">
-                            <ul class="dt-sc-testimonial-carousel">
-                                <li>
-                                    <div class="dt-sc-testimonial">
-                                        <div class="author">
-                                            <img alt src="images/testimonial-img1.jpg">
-                                        </div>
-                                        <div class="hr-invisible-small"></div>
-                                        <blockquote>I’ve been coming to this
-                                            salon for over a year, and I
-                                            couldn’t be
-                                            happier with the results every
-                                            time. The staff is always
-                                            friendly, and the
-                                            stylists really listen to what I
-                                            want. My hair has never looked
-                                            better, and
-                                            I always leave feeling pampered
-                                            and refreshed. Highly recommend
-                                            this salon
-                                            for anyone looking for expert
-                                            care!</blockquote>
-                                        <div class="author-detail">
-                                            Jos Buttler <span>Regular
-                                                Client</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="dt-sc-testimonial">
-                                        <div class="author">
-                                            <img alt src="images/testimonial-img2.jpg">
-                                        </div>
-                                        <div class="hr-invisible-small"></div>
-                                        <blockquote>I had my first visit to
-                                            this salon for a manicure and
-                                            facial, and I
-                                            was blown away by the
-                                            experience. The ambiance was so
-                                            relaxing, and the
-                                            staff made me feel right at
-                                            home. My skin feels amazing, and
-                                            my nails are
-                                            perfect. I’ll definitely be
-                                            coming back for all my future
-                                            beauty needs!
-                                        </blockquote>
-                                        <div class="author-detail">
-                                            Sarah Taylor <span>First-Time
-                                                Client</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="dt-sc-testimonial">
-                                        <div class="author">
-                                            <img alt src="images/testimonial-img3.jpg">
-                                        </div>
-                                        <div class="hr-invisible-small"></div>
-                                        <blockquote>I came here for my
-                                            wedding day hair and makeup, and
-                                            I couldn’t have
-                                            been more pleased with how
-                                            everything turned out. The team
-                                            took the time to
-                                            understand exactly what I wanted
-                                            and made me feel like the best
-                                            version of
-                                            myself on my big day. I received
-                                            so many compliments, and I’ll
-                                            forever be
-                                            grateful for their amazing
-                                            work!</blockquote>
-                                        <div class="author-detail">
-                                            Lydia Greenway <span> Bridal
-                                                Client</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="dt-sc-testimonial">
-                                        <div class="author">
-                                            <img alt src="images/testimonial-img4.jpg">
-                                        </div>
-                                        <div class="hr-invisible-small"></div>
-                                        <blockquote>I came in for a dramatic
-                                            hair color change, and I was
-                                            nervous about
-                                            how it would turn out. The
-                                            stylist really listened to my
-                                            concerns and gave
-                                            me exactly what I wanted – a
-                                            beautiful, vibrant color that
-                                            complements my
-                                            personality perfectly! I
-                                            couldn’t be happier with the
-                                            results, and I’m
-                                            already booking my next
-                                            appointment!</blockquote>
-                                        <div class="author-detail">
-                                            Steve Smith <span>Hair
-                                                Transformation Client</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="dt-sc-testimonial">
-                                        <div class="author">
-                                            <img alt src="images/testimonial-img2.jpg">
-                                        </div>
-                                        <div class="hr-invisible-small"></div>
-                                        <blockquote>After a long week of
-                                            work, I decided to treat myself
-                                            to a relaxing
-                                            spa day, and it was absolutely
-                                            worth it! The massage was
-                                            incredibly
-                                            soothing, and the facial left my
-                                            skin glowing. I felt like a new
-                                            person
-                                            after my visit! The staff was
-                                            professional and attentive, and
-                                            the atmosphere
-                                            was so peaceful. I’ll definitely
-                                            be coming back for more
-                                            self-care!
-                                        </blockquote>
-                                        <div class="author-detail">
-                                            Sarah Taylor <span>Spa Service
-                                                Client</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="carousel-arrows">
-                                <a href="#" class="carousel-prev"></a>
-                                <a href="#" class="carousel-next"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                    <div class="hr-invisible"></div>
                 </section><!-- End of Primary Section -->
             </div><!-- End of Main -->
+
+            <!-- <div class="slider" id="sliders">
+                    <span style="--i:1"><img src="./images/offer-img3.jpg" alt="Image 1"></span>
+                    <span style="--i:2"><img src="./images/offer-img3.jpg" alt="Image 2"></span>
+                    <span style="--i:3"><img src="./images/offer-img3.jpg" alt="Image 3"></span>
+                    <span style="--i:4"><img src="./images/offer-img3.jpg" alt="Image 4"></span>
+                    <span style="--i:5"><img src="./images/offer-img3.jpg" alt="Image 5"></span>
+                    <span style="--i:6"><img src="./images/offer-img3.jpg" alt="Image 6"></span>
+                    <span style="--i:7"><img src="./images/offer-img3.jpg" alt="Image 7"></span>
+                    <span style="--i:8"><img src="./images/offer-img3.jpg" alt="Image 8"></span>
+            </div> -->
 
             <section class="backgroundfaq">
                 <section class="faq-container" id="faq">
