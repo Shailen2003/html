@@ -69,11 +69,14 @@
             width: fit-content;
             border-radius: 4px;
         }
-        .card img:hover{
-            transform: scale(1.1); /* Slight zoom-out effect */
-            
+
+        .card img:hover {
+            transform: scale(1.1);
+            /* Slight zoom-out effect */
+
         }
-        .card:hover{
+
+        .card:hover {
             box-shadow: #555;
             background-color: rgb(245, 115, 212);
         }
@@ -97,6 +100,55 @@
                 width: 100%;
                 /*1 column on smaller screens */
             }
+        }
+
+        .circular-images {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 12%;
+            height: 250px;
+        }
+
+        .slider {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+            animation: rotate 30s linear infinite;
+        }
+
+        @keyframes rotate {
+
+            0% {
+                transform: perspective(1000px) rotateY(0deg);
+            }
+
+            100% {
+                transform: perspective(1000px) rotateY(360deg);
+            }
+        }
+
+        .slider span {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transform: rotateY(calc(var(--i)*45deg)) translateZ(280px);
+        }
+
+        .slider span img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: 10s;
+
+        }
+
+        .slider span:hover img {
+            transition: translateY(-50) scale(1.2);
         }
 
         .backgroundfaq {
@@ -205,10 +257,9 @@
                                     alt="Trendy" src="images/logo.png"></a>
                             <ul class="menu">
                                 <li class="menu-item-simple-parent"><a href="index.html">Home</a>
-                                    </li>
-                                    <li class="menu-item-simple-parent"><a
-                                            href="about-us.html">About</a>
-                                        
+                                </li>
+                                <li class="menu-item-simple-parent"><a href="about-us.html">About</a>
+
                                 <li class="current_page_item"><a href="services.html">Service</a></li>
 
                                 <li class="menu-item-simple-parent"><a href="gallery.html">Gallery</a>
@@ -297,7 +348,7 @@
                                         <div class="cards-img-container">
                                             <div class="card" style="width: 18rem;">
                                                 <img src="./images/party-makeup.jpg" class="card-img-top" alt="..."
-                                                    style="width: 250px;" >
+                                                    style="width: 250px;">
                                                 <div class="card-body">
                                                     <p class="card-text" style="color: white;">Glamorous makeup
                                                         <br><span><strong>INR
@@ -339,7 +390,8 @@
                                                 <img src="images/engagement-makeup1.jpeg" class="card-img-top" alt="..."
                                                     style="width: 250px;">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Cultural Engagement Makeup
+                                                    <p class="card-text" style="color: white;">Cultural Engagement
+                                                        Makeup
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
@@ -348,7 +400,8 @@
                                             <div class="card" style="width: 18rem;">
                                                 <img src="images/engagement-makeup3.jpg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Traditional Engagement Makeup
+                                                    <p class="card-text" style="color: white;">Traditional Engagement
+                                                        Makeup
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
@@ -358,7 +411,8 @@
                                             <div class="card" style="width: 18rem;">
                                                 <img src="./images/offer-img3.jpg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text" style="color: white;">Glamorous Engagement Makeup
+                                                    <p class="card-text" style="color: white;">Glamorous Engagement
+                                                        Makeup
                                                         <br><span><strong>INR
                                                                 5000</strong></span>
                                                     </p>
@@ -392,7 +446,8 @@
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/haircut&styling3.jpeg" class="card-img-top" alt="...">
+                                                <img src="./images/haircut&styling3.jpeg" class="card-img-top"
+                                                    alt="...">
                                                 <div class="card-body">
                                                     <p class="card-text" style="color: white;">
                                                         Beach Waves
@@ -443,7 +498,8 @@
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/hair-treatement3.webp" class="card-img-top" alt="...">
+                                                <img src="./images/hair-treatement3.webp" class="card-img-top"
+                                                    alt="...">
                                                 <div class="card-body">
                                                     <p class="card-text" style="color: white;">Bond Repair Treatment
                                                         <br><span><strong>INR
@@ -631,8 +687,8 @@
                                         </div>
                                         <div class="cards-img-container">
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/manicure&padicure1.jpg" class="card-img-top" alt="..."
-                                                    style="width: 250px;">
+                                                <img src="./images/manicure&padicure1.jpg" class="card-img-top"
+                                                    alt="..." style="width: 250px;">
                                                 <div class="card-body">
                                                     <p class="card-text" style="color: white;">
                                                         <br><span><strong>INR
@@ -641,7 +697,8 @@
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/manicure&padicure2.jpg" class="card-img-top" alt="...">
+                                                <img src="./images/manicure&padicure2.jpg" class="card-img-top"
+                                                    alt="...">
                                                 <div class="card-body">
                                                     <p class="card-text" style="color: white;">
                                                         <br><span><strong>INR
@@ -651,7 +708,8 @@
                                                 </div>
                                             </div>
                                             <div class="card" style="width: 18rem;">
-                                                <img src="./images/manicure&padicure3.jpeg" class="card-img-top" alt="...">
+                                                <img src="./images/manicure&padicure3.jpeg" class="card-img-top"
+                                                    alt="...">
                                                 <div class="card-body">
                                                     <p class="card-text" style="color: white;">
                                                         <br><span><strong>INR
@@ -843,7 +901,8 @@
                                                 <div class="column dt-sc-one-third">
                                                     <div class="dt-sc-offer">
                                                         <figure class="gallery-thumb">
-                                                            <a href="#"><img src="./images/prosthetic.jpeg" alt title></a>
+                                                            <a href="#"><img src="./images/prosthetic.jpeg" alt
+                                                                    title></a>
                                                         </figure>
                                                         <div class="gallery-details">
                                                             <h4><a href="#">Prosthetic
@@ -950,18 +1009,22 @@
                     </div>
                 </section><!-- End of Primary Section -->
             </div><!-- End of Main -->
-
-            <!-- <div class="slider" id="sliders">
-                    <span style="--i:1"><img src="./images/offer-img3.jpg" alt="Image 1"></span>
-                    <span style="--i:2"><img src="./images/offer-img3.jpg" alt="Image 2"></span>
-                    <span style="--i:3"><img src="./images/offer-img3.jpg" alt="Image 3"></span>
-                    <span style="--i:4"><img src="./images/offer-img3.jpg" alt="Image 4"></span>
-                    <span style="--i:5"><img src="./images/offer-img3.jpg" alt="Image 5"></span>
-                    <span style="--i:6"><img src="./images/offer-img3.jpg" alt="Image 6"></span>
-                    <span style="--i:7"><img src="./images/offer-img3.jpg" alt="Image 7"></span>
-                    <span style="--i:8"><img src="./images/offer-img3.jpg" alt="Image 8"></span>
-            </div> -->
-
+            <section class="circular-images">
+                <div class="slider" id="sliders">
+                    <span style="--i:1"><img src="./images/makeup1.jpg" alt="Image 1"></span>
+                    <span style="--i:2"><img src="./images/makeup2.jpg" alt="Image 2"></span>
+                    <span style="--i:3"><img src="./images/makeup3.jpg" alt="Image 3"></span>
+                    <span style="--i:4"><img src="./images/makeup4.jpg" alt="Image 4"></span>
+                    <span style="--i:5"><img src="./images/makeup5.jpg" alt="Image 5"></span>
+                    <span style="--i:6"><img src="./images/makeup6.jpg" alt="Image 6"></span>
+                    <span style="--i:7"><img src="./images/makeup7.jpg" alt="Image 7"></span>
+                    <span style="--i:8"><img src="./images/bridal-mac.jpg" alt="Image 8"></span>
+                    <span style="--i:9"><img src="./images/bridal-hd.jpg" alt="Image 9"></span>
+                    <span style="--i:10"><img src="./images/engagement-makeup1.jpeg" alt="Image 10"></span>
+                    <span style="--i:11"><img src="./images/engagement-makeup2.jpeg" alt="Image 11"></span>
+                    <span style="--i:12"><img src="./images/engagement-makeup3.jpeg" alt="Image 12"></span>
+                </div>
+            </section>
             <section class="backgroundfaq">
                 <section class="faq-container" id="faq">
                     <h2>Frequently
