@@ -38,7 +38,7 @@
 	
 	.is-sticky .type2 #menu-container::after, .is-sticky #menu-container { box-shadow: 0 0 3px #e32c2e; }
 	
-	.portfolio .fig-content { background-color: rgba(227, 44, 46, 0.8); }
+	.portfolio .fig-content { background-color: rgb(142 103 255 / 80%) }
 	
 	.recent-gallery-container #bx-pager a.active, .recent-gallery-container #bx-pager a:hover { box-shadow: 0 0 0 3px #e32c2e; -moz-box-shadow: 0 0 0 3px #e32c2e; -webkit-box-shadow: 0 0 0 3px #e32c2e;}  
 		
