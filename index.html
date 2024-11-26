@@ -124,8 +124,7 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
-              </div>
-            
+              </div>           
             <div class=" clear"></div>
             <div class="opening-time-info">
             	<div class="container">
@@ -287,11 +286,14 @@
                         Schedule your appointment now and experience the magic of expert care. 🌟"let’s make it happen! Secure your spot now and let us work our magic. ✨👑"
                     </p>
                 </div>
+                
                 <div class="column dt-sc-two-third">
                     <h3 class="border-title">Book your <span>Appointment</span></h3>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact">
                     <form class="contact-form" method="post" name="enqform" action="php/send.php">
                         <div class="column dt-sc-one-half first">
                             <div class="animate" data-delay="100" data-animation="fadeIn">
+                                <input type="hidden" name="access_key" value="2561073d-f3cf-46dc-aebc-66720e38decc">
                                 <p><input type="text" name="username" placeholder="Your Name (required)" required/> </p>
                                 <p><input type="email" name="txtemail" placeholder="Email (required)" required/></p>                                                        
                             </div>
@@ -311,6 +313,7 @@
                             <input type="submit" value="submit" name="submit">
                         </div>
                     </form>
+                </form>
                     <div id="ajax_contactform_msg"> </div>
                 </div>
             </div>
