@@ -225,6 +225,77 @@
             opacity: 1;
             transform: translateX(0);
         }
+
+        /* Subscription Container */
+        .subscription-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Subscription Card */
+        .subscription-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+        }
+
+        .subscription-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Card Header */
+        .subscription-card h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #000000;
+            /* Green for headers */
+            position: relative;
+        }
+
+        .subscription-card h2::after {
+            content: "";
+            display: block;
+            margin: 10px auto 0;
+            width: 50px;
+            height: 3px;
+            background-color: #4caf50;
+            border-radius: 2px;
+        }
+
+        /* Card Details */
+        .details {
+            display: none;
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        .subscription-card.active .details {
+            display: block;
+        }
+
+        .details p {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .details ul {
+            padding-left: 20px;
+            color: #333;
+        }
+
+        .details ul li {
+            margin-bottom: 5px;
+        }
     </style>
 
 </head>
@@ -276,7 +347,7 @@
                 </div>
             </header>
             <div id="main">
-                
+
                 <div class="hr-invisible-very-small"></div>
                 <div class="clear"></div>
                 <section id="primary" class="content-full-width"><!-- Primary Section -->
@@ -805,6 +876,70 @@
                                     </section>
                                 </section>
                             </div>
+                            <div class="fullwidth-section">
+                                <h2 class="border-title aligncenter"> Our Academy
+                                    Services </h2>
+                                <div class="subscription-container">
+                                    <div class="subscription-card" onclick="toggleDetails(this, 'self-makeup')">
+                                        <h2>Self Makeup Course</h2>
+                                        <div class="details" id="self-makeup">
+                                            <p><strong>Course Duration:</strong> 10 Days</p>
+                                            <ul>
+                                                <li>Skin Analysing</li>
+                                                <li>Preparation of Skin</li>
+                                                <li>Types of Coverage</li>
+                                                <li>Flawless Base Techniques</li>
+                                                <li>Nude Eye Makeup</li>
+                                                <li>Evening Makeup</li>
+                                                <li>Smokey Eyes</li>
+                                                <li>Application of Perfect Lipstick</li>
+                                                <li>Application of Blush</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="subscription-card" onclick="toggleDetails(this, 'level1')">
+                                        <h2>Level 1 (Basic to Advance)</h2>
+                                        <div class="details" id="level1">
+                                            <p><strong>Course Duration:</strong> 1 Month</p>
+                                            <ul>
+                                                <li>Skin Analysing</li>
+                                                <li>Undertone</li>
+                                                <li>Preparation of Skin</li>
+                                                <li>Face Shapes</li>
+                                                <li>Color Theory</li>
+                                                <li>Products and Tools Knowledge</li>
+                                                <li>Brush Knowledge</li>
+                                                <li>Flawless Base Techniques</li>
+                                                <li>Color Application</li>
+                                                <li>Introduction to Corrections</li>
+                                                <li>Types of Eyeliner and Eye Makeup</li>
+                                                <li>How to Choose the Right Foundation</li>
+                                                <li>Highlighting & Contouring</li>
+                                                <li>Different Types of Makeup Looks</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="subscription-card" onclick="toggleDetails(this, 'level2')">
+                                        <h2>Level 2 (Advance to Pro)</h2>
+                                        <div class="details" id="level2">
+                                            <p><strong>Course Duration:</strong> 2 Months</p>
+                                            <ul>
+                                                <li>Advanced Corrections</li>
+                                                <li>Face Sculpting</li>
+                                                <li>High Definition Makeup</li>
+                                                <li>Ultimate Airbrush Makeup</li>
+                                                <li>Different Types of Bridal Makeup</li>
+                                                <li>(Classic, Traditional, Contemporary)</li>
+                                                <li>Introduction to Fantasy Makeup</li>
+                                                <li>Prosthetic Art (Special Effects)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
                             <div class="aligncenter" ser-app-btn>
                                 <a href="#" class="appointment-btn btn-eff2 ser-app-btn"><i
                                         class="fa fa-pencil-square-o"></i>Book
@@ -1012,7 +1147,7 @@
             </div><!-- End of Main -->
             <h2 class="border-title aligncenter"> Our Latest Work </h2>
             <section class="circular-images">
-                
+
                 <div class="slider" id="sliders">
                     <span style="--i:1"><img src="./images/makeup1.jpg" alt="Image 1"></span>
                     <span style="--i:2"><img src="./images/makeup2.jpg" alt="Image 2"></span>
@@ -1022,7 +1157,7 @@
                     <span style="--i:6"><img src="./images/makeup6.jpg" alt="Image 6"></span>
                     <span style="--i:7"><img src="./images/makeup7.jpg" alt="Image 7"></span>
                     <span style="--i:8"><img src="./images/bridal-mac.jpg" alt="Image 8"></span>
-                    
+
                 </div>
             </section>
             <section class="backgroundfaq">
@@ -1113,7 +1248,7 @@
                                         <li class="tweet">
                                             <span class="tweet-text">
                                                 My hair has never looked
-                                                    better The best
+                                                better The best
                                                 manicure and
                                                 facial I've ever had!
                                                 Perfect wedding day hair and
@@ -1186,6 +1321,61 @@
             const answer = answers[index];
             answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
         }
+        // Function for toggling details of the "Self Makeup Course" card
+        function toggleSelfMakeup() {
+            const selfMakeupDetails = document.getElementById("self-makeup");
+            const level1Details = document.getElementById("level1");
+            const level2Details = document.getElementById("level2");
+
+            // Toggle the current card's details
+            if (selfMakeupDetails.style.display === "block") {
+                selfMakeupDetails.style.display = "none";
+            } else {
+                selfMakeupDetails.style.display = "block";
+                level1Details.style.display = "none"; // Hide other cards
+                level2Details.style.display = "none";
+            }
+        }
+
+        // Function for toggling details of the "Level 1" card
+        function toggleLevel1() {
+            const selfMakeupDetails = document.getElementById("self-makeup");
+            const level1Details = document.getElementById("level1");
+            const level2Details = document.getElementById("level2");
+
+            // Toggle the current card's details
+            if (level1Details.style.display === "block") {
+                level1Details.style.display = "none";
+            } else {
+                level1Details.style.display = "block";
+                selfMakeupDetails.style.display = "none"; // Hide other cards
+                level2Details.style.display = "none";
+            }
+        }
+
+        // Function for toggling details of the "Level 2" card
+        function toggleLevel2() {
+            const selfMakeupDetails = document.getElementById("self-makeup");
+            const level1Details = document.getElementById("level1");
+            const level2Details = document.getElementById("level2");
+
+            // Toggle the current card's details
+            if (level2Details.style.display === "block") {
+                level2Details.style.display = "none";
+            } else {
+                level2Details.style.display = "block";
+                selfMakeupDetails.style.display = "none"; // Hide other cards
+                level1Details.style.display = "none";
+            }
+        }
+
+        // Add click events for each card
+        document.querySelector(".subscription-card:nth-child(1)").addEventListener("click", toggleSelfMakeup);
+        document.querySelector(".subscription-card:nth-child(2)").addEventListener("click", toggleLevel1);
+        document.querySelector(".subscription-card:nth-child(3)").addEventListener("click", toggleLevel2);
+
+
+
     </script>
 
 </body>
