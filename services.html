@@ -33,199 +33,12 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300,700,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
+    <link rel="stylesheet" href="./css/chatsystem.css">
+    <link rel="stylesheet" href="./css/faq.css">
+    <link rel="stylesheet" href="./css/circular-slider.css">
+    <link rel="stylesheet" href="./css/makeup-cards.css">
+    <link rel="stylesheet" href="./css/subscription.css">
     <script src="js/modernizr.custom.js"></script>
-    <style>
-        .cards-img-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 16px;
-            /* Space between cards */
-            padding: 16px;
-            justify-content: center;
-            align-items: center;
-            /* Center the cards horizontally */
-        }
-
-        .card {
-            background-color: rgb(219, 192, 167);
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            width: calc(33.333% - 16px);
-            /* Responsive width for 3 columns */
-            max-width: 300px;
-            /* Optional max-width    for each card */
-            text-align: center;
-            padding: 16px;
-            height: 320px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: calc(33.333% - 16px);
-
-        }
-
-        .card img {
-            max-width: auto;
-            height: 230px;
-            width: fit-content;
-            border-radius: 4px;
-        }
-
-        .card img:hover {
-            transform: scale(1.1);
-            /* Slight zoom-out effect */
-
-        }
-
-        .card:hover {
-            box-shadow: #555;
-            background-color: rgb(245, 115, 212);
-        }
-
-        .card p {
-            margin-top: 8px;
-            font-size: 14px;
-            color: #000000;
-        }
-
-        /* Responsive Breakpoints */
-        @media (max-width: 768px) {
-            .card {
-                width: calc(50% - 16px);
-                /* 2 columns on tablets */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .card {
-                width: 100%;
-                /*1 column on smaller screens */
-            }
-        }
-
-        .circular-images {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 12%;
-            height: 250px;
-            background: linear-gradient(90deg, #3385FF, #6D5F77);
-
-        }
-
-        .slider {
-            position: relative;
-            width: 150px;
-            height: 150px;
-            transform-style: preserve-3d;
-            transform: perspective(1000px);
-            animation: rotate 30s linear infinite;
-        }
-
-        @keyframes rotate {
-
-            0% {
-                transform: perspective(1000px) rotateY(0deg);
-            }
-
-            100% {
-                transform: perspective(1000px) rotateY(360deg);
-            }
-        }
-
-        .slider span {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            transform-origin: center;
-            transform-style: preserve-3d;
-            transform: rotateY(calc(var(--i)*45deg)) translateZ(280px);
-        }
-
-        .slider span img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            transition: 10s;
-
-        }
-
-        .slider span:hover img {
-            transition: translateY(-50) scale(1.2);
-        }
-
-        .backgroundfaq {
-            background-color: #e3f2fd;
-        }
-
-        .faq-container {
-            width: 600px;
-            margin: 0px auto;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-            background-color: #e3f2fd;
-        }
-
-        @media (max-width:600px) {
-            .faq-container {
-                width: 380px;
-            }
-        }
-
-        .faq-container h2 {
-            color: rgba(250, 13, 104, 0.822);
-            text-align: center;
-            margin: 25px;
-        }
-
-        .faq-item {
-            margin-bottom: 20px;
-            opacity: 0;
-            transform: translateX(100%);
-            transition: opacity 0.5s ease, transform 0.5s ease;
-        }
-
-        .faq-question {
-            font-weight: bold;
-            cursor: pointer;
-            padding: 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            cursor: pointer;
-            font-size: 1.1em;
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .faq-question:hover {
-            background-color: #e2e2e2;
-        }
-
-        .faq-answer {
-            display: none;
-            padding: 10px;
-            font-size: 0.9em;
-            color: #555;
-            background-color: #f9f9f9;
-            border-left: 4px solid #fa0d68;
-            margin-top: 5px;
-        }
-
-
-        .faq-item.active .faq-answer {
-            display: block;
-        }
-
-        .faq-item.show {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    </style>
 
 </head>
 
@@ -276,13 +89,12 @@
                 </div>
             </header>
             <div id="main">
-                
+
                 <div class="hr-invisible-very-small"></div>
                 <div class="clear"></div>
                 <section id="primary" class="content-full-width"><!-- Primary Section -->
                     <div class="fullwidth-section">
-                        <h2 class="border-title aligncenter"> Our Academy
-                            Services </h2>
+                        <h2 class="border-title aligncenter"> Our Makeup Services </h2>
                         <div class="dt-sc-tabs-container">
                             <div class="clear"></div>
                             <div class="hr-invisible-small"></div>
@@ -805,6 +617,70 @@
                                     </section>
                                 </section>
                             </div>
+                            <div class="fullwidth-section">
+                                <h2 class="border-title aligncenter"> Our Academy
+                                    Services </h2>
+                                <div class="subscription-container">
+                                    <div class="subscription-card" onclick="toggleDetails(this, 'self-makeup')">
+                                        <h2>Self Makeup Course</h2>
+                                        <div class="details" id="self-makeup">
+                                            <p><strong>Course Duration:</strong> 10 Days</p>
+                                            <ul>
+                                                <li>Skin Analysing</li>
+                                                <li>Preparation of Skin</li>
+                                                <li>Types of Coverage</li>
+                                                <li>Flawless Base Techniques</li>
+                                                <li>Nude Eye Makeup</li>
+                                                <li>Evening Makeup</li>
+                                                <li>Smokey Eyes</li>
+                                                <li>Application of Perfect Lipstick</li>
+                                                <li>Application of Blush</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="subscription-card" onclick="toggleDetails(this, 'level1')">
+                                        <h2>Level 1 (Basic to Advance)</h2>
+                                        <div class="details" id="level1">
+                                            <p><strong>Course Duration:</strong> 1 Month</p>
+                                            <ul>
+                                                <li>Skin Analysing</li>
+                                                <li>Undertone</li>
+                                                <li>Preparation of Skin</li>
+                                                <li>Face Shapes</li>
+                                                <li>Color Theory</li>
+                                                <li>Products and Tools Knowledge</li>
+                                                <li>Brush Knowledge</li>
+                                                <li>Flawless Base Techniques</li>
+                                                <li>Color Application</li>
+                                                <li>Introduction to Corrections</li>
+                                                <li>Types of Eyeliner and Eye Makeup</li>
+                                                <li>How to Choose the Right Foundation</li>
+                                                <li>Highlighting & Contouring</li>
+                                                <li>Different Types of Makeup Looks</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="subscription-card" onclick="toggleDetails(this, 'level2')">
+                                        <h2>Level 2 (Advance to Pro)</h2>
+                                        <div class="details" id="level2">
+                                            <p><strong>Course Duration:</strong> 2 Months</p>
+                                            <ul>
+                                                <li>Advanced Corrections</li>
+                                                <li>Face Sculpting</li>
+                                                <li>High Definition Makeup</li>
+                                                <li>Ultimate Airbrush Makeup</li>
+                                                <li>Different Types of Bridal Makeup</li>
+                                                <li>(Classic, Traditional, Contemporary)</li>
+                                                <li>Introduction to Fantasy Makeup</li>
+                                                <li>Prosthetic Art (Special Effects)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
                             <div class="aligncenter" ser-app-btn>
                                 <a href="#" class="appointment-btn btn-eff2 ser-app-btn"><i
                                         class="fa fa-pencil-square-o"></i>Book
@@ -816,131 +692,7 @@
                     <div class="hr-invisible"></div>
                     <div class="fullwidth-section dt-sc-parallax-section pricing-parallax dark-bg">
                         <div class="fullwidth-bg">
-                            <div class="parallax-spacing">
-                                <div class="container"><!-- Container -->
-                                    <h2 class="border-title aligncenter">
-                                        Our Latest Offers </h2>
-                                    <div class="hr-invisible-small"></div>
-                                    <div class="column dt-sc-one-fourth first">
-                                        <h3>Our Salon
-                                            <span>Offers</span>
-                                        </h3>
-                                        <p>Transform your passion into a
-                                            profession with exclusive offers
-                                            at Tint and
-                                            Twist Makeup School </p>
-                                        <div class="dt-sc-offer-text">
-                                            <h2>50</h2>
-                                            <span>%<br><span>off</span></span>
-                                        </div>
-                                        <div class="clear"></div>
-                                        <ul class="dt-sc-offer-date">
-                                            <li>
-                                                <span class="fa fa-calendar"></span>
-                                                June 5th to August 5th
-                                            </li>
-                                            <li>
-                                                <span class="fa fa-map-marker"></span>
-                                                All over India
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="column dt-sc-three-fourth">
-                                        <div class="dt-sc-offer-carousel-wrapper">
-                                            <div class="dt-sc-offer-carousel">
-                                                <div class="column dt-sc-one-third">
-                                                    <div class="dt-sc-offer">
-                                                        <figure class="gallery-thumb">
-                                                            <a href="#"><img src="images/offer-img1.jpg" alt title></a>
-                                                        </figure>
-                                                        <div class="gallery-details">
-                                                            <h4><a href="#">Hair
-                                                                    Coloring</a></h4>
-                                                            <div class="dt-sc-price">
-                                                                £ 200
-                                                            </div>
-                                                            <div class="hr-invisible-very-very-small"></div>
-                                                            <a class="dt-sc-button btn-eff3" href="#">View
-                                                                Details</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="column dt-sc-one-third">
-                                                    <div class="dt-sc-offer">
-                                                        <figure class="gallery-thumb">
-                                                            <a href="#"><img src="images/offer-img2.jpg" alt title></a>
-                                                        </figure>
-                                                        <div class="gallery-details">
-                                                            <h4><a href="#">Skin
-                                                                    Care</a></h4>
-                                                            <div class="dt-sc-price">
-                                                                £ 200
-                                                            </div>
-                                                            <div class="hr-invisible-very-very-small"></div>
-                                                            <a class="dt-sc-button btn-eff3" href="#">View
-                                                                Details</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="column dt-sc-one-third">
-                                                    <div class="dt-sc-offer">
-                                                        <figure class="gallery-thumb">
-                                                            <a href="#"><img src="images/offer-img3.jpg" alt title></a>
-                                                        </figure>
-                                                        <div class="gallery-details">
-                                                            <h4><a href="#">Occassion
-                                                                    Style</a></h4>
-                                                            <div class="dt-sc-price">
-                                                                £ 200
-                                                            </div>
-                                                            <div class="hr-invisible-very-very-small"></div>
-                                                            <a class="dt-sc-button btn-eff3" href="#">View
-                                                                Details</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="column dt-sc-one-third">
-                                                    <div class="dt-sc-offer">
-                                                        <figure class="gallery-thumb">
-                                                            <a href="#"><img src="./images/prosthetic.jpg" alt
-                                                                    title></a>
-                                                        </figure>
-                                                        <div class="gallery-details">
-                                                            <h4><a href="#">Prosthetic
-                                                                    Art</a></h4>
-                                                            <div class="dt-sc-price">
-                                                                £ 200
-                                                            </div>
-                                                            <div class="hr-invisible-very-very-small"></div>
-                                                            <a class="dt-sc-button btn-eff3" href="#">View
-                                                                Details</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="column dt-sc-one-third">
-                                                    <div class="dt-sc-offer">
-                                                        <figure class="gallery-thumb">
-                                                            <a href="#"><img src="./images/skinity.jpg" alt title></a>
-                                                        </figure>
-                                                        <div class="gallery-details">
-                                                            <h4><a href="#">Skiniti</a></h4>
-                                                            <div class="dt-sc-price">
-                                                                £ 200
-                                                            </div>
-                                                            <div class="hr-invisible-very-very-small"></div>
-                                                            <a class="dt-sc-button btn-eff3" href="#">View
-                                                                Details</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-arrows">
-                                                <a href="#" class="prev-arrow"><i class="fa fa-angle-left"></i></a>
-                                                <a href="#" class="next-arrow"><i class="fa fa-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!-- End of Container -->
+                            
                             </div>
                         </div>
                     </div>
@@ -1009,10 +761,18 @@
                         <div class="hr-invisible"></div>
                     </div>
                 </section><!-- End of Primary Section -->
+                <div class="button whatsapp-button" onclick="openWhatsAppChat()">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                </div>
+            
+                <!-- Phone Call Button -->
+                <div class="button phone-button" onclick="openPhoneDialer()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone">
+                </div>
             </div><!-- End of Main -->
             <h2 class="border-title aligncenter"> Our Latest Work </h2>
             <section class="circular-images">
-                
+
                 <div class="slider" id="sliders">
                     <span style="--i:1"><img src="./images/makeup1.jpg" alt="Image 1"></span>
                     <span style="--i:2"><img src="./images/makeup2.jpg" alt="Image 2"></span>
@@ -1022,7 +782,7 @@
                     <span style="--i:6"><img src="./images/makeup6.jpg" alt="Image 6"></span>
                     <span style="--i:7"><img src="./images/makeup7.jpg" alt="Image 7"></span>
                     <span style="--i:8"><img src="./images/bridal-mac.jpg" alt="Image 8"></span>
-                    
+
                 </div>
             </section>
             <section class="backgroundfaq">
@@ -1113,7 +873,7 @@
                                         <li class="tweet">
                                             <span class="tweet-text">
                                                 My hair has never looked
-                                                    better The best
+                                                better The best
                                                 manicure and
                                                 facial I've ever had!
                                                 Perfect wedding day hair and
@@ -1162,32 +922,9 @@
     <script src="js/jsplugins.js" type="text/javascript"></script>
     <script src="js/jquery.meanmenu.min.js" type="text/javascript"></script>
     <script src="js/custom.js"></script>
-    <script>
-        function toggleAnswer(index) {
-            const answers = document.querySelectorAll('.faq-answer');
-            const answer = answers[index];
-            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-        }
-
-
-
-        document.addEventListener("DOMContentLoaded", function () {
-            const faqItems = document.querySelectorAll(".faq-item");
-
-            faqItems.forEach((item, index) => {
-                setTimeout(() => {
-                    item.classList.add("show");
-                }, index * 700); // Adjust delay time as needed
-            });
-        });
-
-        function toggleAnswer(index) {
-            const answers = document.querySelectorAll('.faq-answer');
-            const answer = answers[index];
-            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-        }
-    </script>
-
+    <script src="./js/chatsystem.js"></script>
+    <script src="./js/subscription.js"></script>
+    <script src="./js/faq.js"></script>
 </body>
 
 </html>
