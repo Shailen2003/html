@@ -185,7 +185,7 @@
 	h3.border-title.none { color: #ece8e8; text-transform: uppercase; margin-bottom: 20px; font-size: 20px; }
 	.widget h3.border-title { font-size: 24px; margin-bottom: 30px; }	
 	.border-title { position: relative; }
-	p.aligncenter { line-height: 30px; width: 80%; font-weight: bold; }
+	p.aligncenter { line-height: 30px; width: 100%; font-weight: bold; }
 	
 	h3.title, h4.title { text-transform: uppercase; position: relative; }
 	h3.title:after, h4.title:after { height: 1px; clear: both; display: block; position: absolute; bottom: -10px; background: #353737; content: ""; width: 100%; }
