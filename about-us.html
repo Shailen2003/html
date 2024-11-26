@@ -45,6 +45,9 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300,700,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/chatsystem.css">
+
+
     
     <!--[if IE 7]>
     <link rel="stylesheet" href="css/font-awesome-ie7.min.css" />
@@ -394,7 +397,15 @@
                 </div>
                 <div class="clear"></div>
                 <div class="hr-invisible"></div>
-            </section> <!-- End of Primary Section -->   
+            </section> <!-- End of Primary Section -->  
+            <div class="button whatsapp-button" onclick="openWhatsAppChat()">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            </div>
+        
+            <!-- Phone Call Button -->
+            <div class="button phone-button" onclick="openPhoneDialer()">
+                <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone">
+            </div> 
         </div><!-- End of Main -->
         <footer id="footer">
         <div class="hr-invisible"></div>
@@ -474,7 +485,9 @@
                 </div>
             </div>
        	</footer>
+           
 	</div><!-- End of Inner-Wrapper -->
+    
 </div><!-- End of Wrapper -->
 
 <!-- **jQuery** -->    
@@ -483,6 +496,7 @@
 <script src="js/jsplugins.js" type="text/javascript"></script>
 <script src="js/jquery.meanmenu.min.js" type="text/javascript"></script>
 <script src="js/custom.js"></script>
+<script src="./js/chatsystem.js"></script>
 
 </body>
 </html>
