@@ -1,17 +1,25 @@
 /* WhatsApp button */
 .whatsapp-button {
+    display: flex;
+    position: fixed;
     bottom: 90px; /* Above the other logo */
     right: 20px;
     background-color: #25d366;
+    border-radius: 50px;
 }
 
 .whatsapp-button img {
+    
+    position: relative;
     width: 35px;
     height: 35px;
 }
 
 /* Phone button */
 .phone-button {
+    display: flex;
+    position: fixed;
+    border-radius: 50px;
     bottom: 160px; /* Above the WhatsApp button */
     right: 20px;
     background-color: #34b7f1;
