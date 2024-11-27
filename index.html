@@ -146,8 +146,8 @@
                         <li>Sunday: <span>Closed</span></li>
                     </ul>
                     <div class="alignright">
-                    	<a href="#" class="appointment-btn btn-eff2"><i class="fa fa-pencil-square-o"></i>Book an <span>Appointment</span></a>
-                    </div>
+                    	<a href="#appointmentForm" class="appointment-btn btn-eff2"><i class="fa fa-pencil-square-o"></i>Book an <span>Appointment</span></a>
+                    </div> 
                 </div>
             </div>
             <div class="container"><!-- Container -->
@@ -302,6 +302,7 @@
                 </div>
                 
                 <div class="column dt-sc-two-third">
+                    <div id="appointmentForm">
                     <h3 class="border-title">Book your <span>Appointment</span></h3>
                     <form action="https://api.web3forms.com/submit" method="POST" class="contact">
                     <form class="contact-form" method="post" name="enqform" action="php/send.php">
@@ -315,18 +316,25 @@
                         <div class="column dt-sc-one-half">
                             <div class="animate" data-delay="300" data-animation="fadeIn">
                                 <p><input type="text" required name="txtname" placeholder="Your Phone (required)"/></p>
-                                <p><input id="datepicker" type="text" placeholder="Date of Appointment" value="" name="datepicker"><span class="icons fa fa-calendar"></span></p>
+                                <p>
+                                    <label for="appointment-date">Date of Appointment</label>
+                                    <input id="appointment-date" type="date" name="datepicker" required aria-label="Date of Appointment">
+                                </p>
                             </div>
                         </div>
                         <div class="column dt-sc-one-column">
                             <div class="animate" data-delay="500" data-animation="fadeIn">
                                 <p><textarea class="message" required rows="10" placeholder="Comments(required)" cols="5" name="txtmessage"></textarea></p>
                             </div>
-                        </div>                                                                                             
+                        </div>         
+                                                                                                       
                         <div class="form-row aligncenter animate" data-delay="700" data-animation="fadeIn">
                             <input type="submit" value="submit" name="submit">
                         </div>
+                    
                     </form>
+                </div>
+                
                 </form>
                     <div id="ajax_contactform_msg"> </div>
                 </div>
@@ -580,7 +588,6 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
     <script src="./js/chatsystem.js"></script>
-    
     
 </body>
 
