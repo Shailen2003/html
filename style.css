@@ -1718,3 +1718,99 @@ transform: translateX(0);
 							height: 200px;
 						}
 					}
+					
+
+					/*services card section  */
+
+
+					/* General Reset */
+
+h2 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* Container Styles */
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.course-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 16px 10px rgba(0, 0, 0, 0.15);
+}
+
+.course-card h2 {
+    background: whitesmoke;
+    color: black;
+    padding: 50px;
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+}
+
+.course-details {
+    padding: 10px;
+    display: none;
+}
+
+.course-details p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.course-details ul {
+    list-style: disc;
+    margin-top: 5px; /* Reduced margin */
+    font-size: 16px; /* Smaller text for list items */
+}
+
+/* Appointment Button */
+.appointment-btn-container {
+    text-align: center;
+    padding: 50px; /* Reduced padding */
+}
+
+.appointment-btn {
+    background: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px; /* Reduced padding */
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+}
+
+.appointment-btn:hover {
+    background: #e6d1d1;
+	transform: translateY(-5px);
+	box-shadow: 10px 16px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+		

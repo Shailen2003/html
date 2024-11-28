@@ -239,10 +239,10 @@
 
                             </div>
                             
-                            <div class="subscription-container dt-sc-tabs-frame-content">
-                                <div class="subscription-card" onclick="toggleDetails(this, 'self-makeup')">
+                            <div class="course-container">
+                                <div class="course-card" onclick="toggleDetails(this, 'self-makeup')">
                                     <h2>Self Makeup Course</h2>
-                                    <div class="details" id="self-makeup">
+                                    <div class="course-details" id="self-makeup">
                                         <p><strong>Course Duration:</strong> 10 Days</p>
                                         <ul>
                                             <li>Skin Analysing</li>
@@ -257,9 +257,9 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="subscription-card" onclick="toggleDetails(this, 'level1')">
+                                <div class="course-card" onclick="toggleDetails(this, 'level1')">
                                     <h2>Level 1 (Basic to Advance)</h2>
-                                    <div class="details" id="level1">
+                                    <div class="course-details" id="level1">
                                         <p><strong>Course Duration:</strong> 1 Month</p>
                                         <ul>
                                             <li>Skin Analysing</li>
@@ -279,9 +279,9 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="subscription-card" onclick="toggleDetails(this, 'level2')">
+                                <div class="course-card" onclick="toggleDetails(this, 'level2')">
                                     <h2>Level 2 (Advance to Pro)</h2>
-                                    <div class="details" id="level2">
+                                    <div class="course-details" id="level2">
                                         <p><strong>Course Duration:</strong> 2 Months</p>
                                         <ul>
                                             <li>Advanced Corrections</li>
@@ -296,12 +296,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="aligncenter" ser-app-btn>
-                                <a href="#" class="appointment-btn btn-eff2 ser-app-btn"><i
-                                        class="fa fa-pencil-square-o"></i>Book
-                                    an <span class="ser-app-btn">Appointment</span></a>
+                            <div class="appointment-btn-container">
+                                <a href="index.html#appointmentForm" class="appointment-btn">Book an Appointment</a>
                             </div>
-                        </div>
                     </div>
                     
                     <div class="clear"></div>
@@ -533,6 +530,21 @@
     <script src="./js/chatsystem.js"></script>
     <script src="./js/subscription.js"></script>
     <script src="./js/faq.js"></script>
+
+    <script>
+        function toggleDetails(card, detailsId) {
+            const details = document.getElementById(detailsId);
+            const isVisible = details.style.display === "block";
+
+            // Hide all other details
+            document.querySelectorAll(".course-details").forEach(detail => {
+                detail.style.display = "none";
+            });
+
+            // Toggle visibility of clicked card's details
+            details.style.display = isVisible ? "none" : "block";
+        }
+    </script>
 </body>
 
 </html>
