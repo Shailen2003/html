@@ -137,7 +137,7 @@
 	ul.dt-sc-fancy-list li:before { color: #e32c2e; font-family: FontAwesome; font-size: 14px; font-style: normal; font-weight: normal; left: 0; position: absolute; text-decoration: inherit; top: 6px; }
 	.alignright ul.dt-sc-fancy-list li::before { left: auto; right: 0; }
 	.alignright ul.dt-sc-fancy-list li { padding: 5px 20px 5px 5px; }
-	ul.dt-sc-fancy-list li { display: block; padding: 5px 5px 5px 20px; position: relative; color: #777; font-weight: 400; }
+	ul.dt-sc-fancy-list li { display: block; padding: 5px 5px 5px 20px; position: relative; color: white; font-weight: 400; }
 	
 	ul.dt-sc-fancy-list.chillipepper li::before { color: #b31f41; }
 	ul.dt-sc-fancy-list.brown li::before { color: #8f5a28; }

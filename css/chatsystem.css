@@ -4,15 +4,18 @@
     position: fixed;
     bottom: 90px; /* Above the other logo */
     right: 20px;
-    background-color: #25d366;
+    /* background-color: #25d366; */
     border-radius: 50px;
+    z-index: 2;
 }
 
 .whatsapp-button img {
     
     position: relative;
-    width: 35px;
-    height: 35px;
+    width: 55px;
+    height: 55px;
+    z-index: 2;
+    
 }
 
 /* Phone button */
@@ -22,12 +25,14 @@
     border-radius: 50px;
     bottom: 160px; /* Above the WhatsApp button */
     right: 20px;
-    background-color: #34b7f1;
+    /* background-color: #34b7f1; */
+    z-index: 2;
 }
 
 .phone-button img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
 }
 
 /* Responsive adjustments */
@@ -38,8 +43,12 @@
     }
 
     .button img {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
+    }
+    .phone-button img{
+        width: 35px;
+        height: 35px;
     }
 }
 
@@ -56,9 +65,14 @@
         width: 45px;
         height: 45px;
     }
-
+    
     .button img {
-        width: 25px;
-        height: 25px;
+        width: 55px;
+        height: 55px;
     }
+    .phone-button img{
+        width: 35px;
+        height: 35px;
+    }
+
 }
