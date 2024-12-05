@@ -1732,6 +1732,9 @@ ul {
     padding: 10px;
     display: none;
 }
+.cdindex{
+	display: block;
+}
 
 .course-details p {
     font-weight: bold;

@@ -161,7 +161,7 @@
                 <div class="course-container">
                     <div class="course-card" onclick="toggleDetails(this, 'self-makeup')">
                         <h2>Self Makeup Course</h2>
-                        <div class="course-details" id="self-makeup">
+                        <div class="course-details cdindex" id="self-makeup">
                             <p><strong>Course Duration:</strong> 10 Days</p>
                             <ul>
                                 <li>Skin Analysing</li>
@@ -178,7 +178,7 @@
                     </div>
                     <div class="course-card" onclick="toggleDetails(this, 'level1')">
                         <h2>Level 1 (Basic to Advance)</h2>
-                        <div class="course-details" id="level1">
+                        <div class="course-details cdindex" id="level1">
                             <p><strong>Course Duration:</strong> 1 Month</p>
                             <ul>
                                 <li>Skin Analysing</li>
@@ -200,7 +200,7 @@
                     </div>
                     <div class="course-card" onclick="toggleDetails(this, 'level2')">
                         <h2>Level 2 (Advance to Pro)</h2>
-                        <div class="course-details" id="level2">
+                        <div class="course-details cdindex" id="level2">
                             <p><strong>Course Duration:</strong> 2 Months</p>
                             <ul>
                                 <li>Advanced Corrections</li>
@@ -225,7 +225,7 @@
                                 <div class="dt-sc-service type2">
                                     <figure class="gallery-thumb">
                                         <a href="#">
-                                            <img class="dt-sc-filter" title="" alt="" src="./images/makeup6.jpg">
+                                            <img class="dt-sc-filter" title="" alt="" src="./images/eyemakeup.jpg">
                                         </a>
                                     </figure>
                                     <div class="hr-invisible-very-small"></div>
@@ -238,7 +238,7 @@
                                 <div class="dt-sc-service type2">
                                     <figure class="gallery-thumb">
                                         <a href="#">
-                                            <img class="dt-sc-filter" title="" alt="" src="images/makeup1.jpg">
+                                            <img class="dt-sc-filter" title="" alt="" src="images/makeup01.jpg">
                                         </a>
                                     </figure>
                                     <div class="hr-invisible-very-small"></div>
@@ -250,7 +250,7 @@
                                 <div class="dt-sc-service type2">
                                     <figure class="gallery-thumb">
                                         <a href="#">
-                                            <img class="dt-sc-filter" title="" alt="" src="images/makeup2.jpg">
+                                            <img class="dt-sc-filter" title="" alt="" src="images/makeup02.jpg">
                                         </a>
                                     </figure>
                                     <div class="hr-invisible-very-small"></div>
@@ -263,7 +263,7 @@
                                 <div class="dt-sc-service type2">
                                     <figure class="gallery-thumb">
                                         <a href="#">
-                                            <img class="dt-sc-filter" title="" alt="" src="images/makeup3.jpg">
+                                            <img class="dt-sc-filter" title="" alt="" src="images/makeup03.jpg">
                                         </a>
                                     </figure>
                                     <div class="hr-invisible-very-small"></div>
@@ -599,20 +599,7 @@
     
 
 
-    <script>
-        function toggleDetails(card, detailsId) {
-            const details = document.getElementById(detailsId);
-            const isVisible = details.style.display === "block";
-
-            // Hide all other details
-            document.querySelectorAll(".course-details").forEach(detail => {
-                detail.style.display = "none";
-            });
-
-            // Toggle visibility of clicked card's details
-            details.style.display = isVisible ? "none" : "block";
-        }
-    </script>
+    
 </body>
 
 </html>
